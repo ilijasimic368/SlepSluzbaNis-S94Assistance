@@ -6,60 +6,100 @@
     <title>Šlep služba Niš | S94 Assistance</title>
     <meta name="description" content="Šlep služba Niš – S94 Assistance. Brza intervencija 0-24h, dolazak do 15 minuta, vuča automobila i motocikala, pomoć na putu.">
     <meta name="keywords" content="Šlep služba, Niš, vuča automobila, vuča motocikala, pomoć na putu, S94 Assistance">
-    <link rel="stylesheet" href="style.css"> 
-    <meta name="google-site-verification" content="tsrHWtZ9WGs-iRhFHIjfoYm_S9bWtnTZNGkhnlsw0q0" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Šlep služba Niš | S94 Assistance">
+    <meta property="og:description" content="Brza šlep služba u Nišu – 0-24h, dolazak do 15 minuta.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tvoj-sajt.rs">
+    <meta property="og:image" content="https://tvoj-sajt.rs/slike/image1.webp">
+ <meta name="google-site-verification" content="tsrHWtZ9WGs-iRhFHIjfoYm_S9bWtnTZNGkhnlsw0q0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Šlep služba Niš – S94 Assistance",
+      "telephone": "+381658734473",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Presvetog Preobrazenja 4",
+        "addressLocality": "Niš",
+        "postalCode": "18204",
+        "addressCountry": "RS"
+      },
+      "openingHours": "Mo-Su 00:00-23:59"
+    }
+    </script>
 </head>
 <body>
 
 <header>
     <h1>Šlep služba Niš – S94 Assistance</h1>
-    <p class="rating">⭐ 5.0 </p>
+    <p class="rating">⭐ 5.0</p>
     <a href="tel:0658734473" class="call-btn" aria-label="Pozovi Šlep službu Niš">📞 Pozovi odmah</a>
 </header>
 
-<main class="main-container">
+<main class="main-container" role="main">
 
-    <img src="slike/image1.webp" alt="Šlep služba u akciji" class="side-image left">
-    <img src="slike/image3.webp" class="side-image left" alt="Pomoć na putu – Vuča motocikla">
-  
+    <!-- Leva grid slike -->
+    <div class="side-images left">
+        <img src="slike/image1.webp" alt="Šlep služba – vuča automobila" loading="lazy">
+        <img src="slike/image3.webp" alt="Pomoć na putu – vuča motocikla" loading="lazy">
+        <img src="slike/image5.jpg" alt="Vuča motocikala" loading="lazy">
+        <img src="slike/image7.jpg" alt="Intervencija na putu" loading="lazy">
+        <img src="slike/image9.jpg" alt="Pomoć na putu" loading="lazy">
+    </div>
+
+    <!-- Kartica -->
     <section class="card">
         <section class="info">
             <h2>Osnovni podaci</h2>
             <p>Profesionalna šlep služba u Nišu.<br>Brza intervencija 0-24h, dolazak do 15 minuta.</p>
+            <p>Broj telefona: <a href="tel:0658734473">065 873 4473</a></p>
         </section>
 
         <section class="info">
-            <h2>Radno vreme</h2>
+            <h2>Radno vreme i adresa</h2>
             <p>Otvoreno 24 sata – svaki dan</p>
-            <h2>Adresa</h2>
-            <p>Presvetog preobrazenja 4, Brenica-Niš 18204</p>
+            <p>Presvetog Preobrazenja 4, Brenica-Niš 18204</p>
         </section>
 
         <section class="info">
             <h2>Usluge</h2>
             <ul>
-                <li>Vuča automobila</li>
-                <li>Vuča motocikala</li>
-                <li>Pomoć na putu</li>
-                <li>Zamena gume</li>
+                <li class="auto">Vuča automobila</li>
+                <li class="motor">Vuča motocikala</li>
+                <li class="pomoc">Pomoć na putu</li>
+                <li class="guma">Zamena gume</li>
             </ul>
         </section>
     </section>
 
-    <img src="slike/image2.webp" alt="Pomoć na putu – vuča automobila" class="side-image right">
-    <img src="slike/image4.webp" class="side-image right" id="slika4" alt="Pomoć na putu – Intervencija na putu">
+    <!-- Desna grid slike -->
+    <div class="side-images right">
+        <img src="slike/image2.webp" alt="Pomoć na putu – vuča automobila" loading="lazy">
+        <img src="slike/image4.jpg" alt="Intervencija na putu" loading="lazy">
+        <img src="slike/image6.jpg" alt="Intervencija na putu" loading="lazy">
+        <img src="slike/image8.jpg" alt="Pomoć na putu" loading="lazy">
+        <img src="slike/image10.jpg" alt="Intervencija na putu" loading="lazy">
+    </div>
+
 </main>
 
 <footer>
     <p>&copy; 2025 Šlep služba Niš – S94 Assistance</p>
     <p>Kontakt: <a href="tel:0658734473">065 873 4473</a> | 
-       <a href="https://goo.gl/maps/xyz123" target="_blank" rel="noopener">Presvetog Preobrazenja 4, Niš</a></p>
+       <a href="https://www.google.com/maps/place/Slep+sluzba+s94+assistance+Nis/" target="_blank" rel="noopener" aria-label="Pogledaj lokaciju na Google Maps">Presvetog Preobrazenja 4, Niš</a></p>
     <p>Brza intervencija 0-24h, vuča automobila i motocikala, pomoć na putu.</p>
 </footer>
 
-
 </body>
 </html>
+
 
 
 
