@@ -1,106 +1,105 @@
 /* ========== Globalno ========== */
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
+  margin: 0;
+  padding: 0 0 80px 0; /* prostor za fiksno dugme na mobilnom */
+  color: #333;
+  line-height: 1.6;
 }
 
 /* ========== Header ========== */
 header {
-    padding: 30px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #1a73e8 0%, #1558b0 100%);
-    color: white;
-    border-radius: 0 0 20px 20px;
+  padding: 30px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1a73e8 0%, #1558b0 100%);
+  color: white;
+  border-radius: 0 0 20px 20px;
 }
 
 h1 { font-size: 2em; margin: 0; }
 .rating { color: #ffd700; font-weight: bold; margin: 10px 0; font-size: 1.3em; }
 
 .call-btn {
-    display: inline-block;
-    background: #ff5722;
-    color: white;
-    padding: 16px 28px;
-    text-decoration: none;
-    border-radius: 15px;
-    margin: 20px 0;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    z-index: 100;
+  display: inline-block;
+  background: #ff5722;
+  color: white;
+  padding: 16px 28px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 100;
 }
-.call-btn:hover,
-.call-btn:focus {
-    background: #e64a19;
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    outline: none;
+
+.call-btn:hover, .call-btn:focus {
+  background: #e64a19;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  outline: none;
 }
 
 /* Sticky CTA na mobilnim */
 @media (max-width: 768px) {
-    .call-btn {
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 400px;
-        text-align: center;
-    }
+  .call-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    padding: 16px 0;
+  }
 }
 
 /* ========== Main ========== */
 .main-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 30px 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
 }
 
 /* Grid za slike */
 .side-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 .side-images img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  aspect-ratio: 16/9; /* uniformna proporcija */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .side-images img:hover {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 /* ========== Kartica ========== */
 .card {
-    max-width: 800px;
-    width: 60%;
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 400px;
+  max-width: 800px;
+  width: 60%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px) scale(1.01);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
 
 .info { margin-top: 25px; text-align: left; }
@@ -118,32 +117,33 @@ li::before { position: absolute; left: 0; font-size: 1.3em; }
 
 /* ========== Footer ========== */
 footer {
-    text-align: center;
-    padding: 30px 20px;
-    color: #555;
-    font-size: 0.9em;
-    background: #f0f0f0;
-    border-radius: 15px 15px 0 0;
+  text-align: center;
+  padding: 30px 20px;
+  color: #555;
+  font-size: 0.9em;
+  background: #f0f0f0;
+  border-radius: 15px 15px 0 0;
 }
+
 footer a { color: #1a73e8; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
 /* ========== Responsivnost ========== */
 @media (max-width: 1200px) {
-    .side-images img { height: 160px; }
-    .card { width: 70%; padding: 35px; }
+  .side-images img { aspect-ratio: 16/9; }
+  .card { width: 70%; padding: 35px; }
 }
 
 @media (max-width: 768px) {
-    .main-container { flex-direction: column; align-items: center; gap: 20px; padding: 20px 10px; }
-    .side-images img { height: 140px; }
-    .card { width: 95%; padding: 25px; border-radius: 15px; }
+  .main-container { flex-direction: column; align-items: center; gap: 20px; padding: 20px 10px; }
+  .side-images { grid-template-columns: 1fr; }
+  .side-images img { width: 90%; height: auto; margin: 0 auto; }
+  .card { width: 95%; padding: 25px; border-radius: 15px; }
 }
 
 @media (max-width: 600px) {
-    .side-images img { height: 120px; }
-    .card { padding: 20px; }
-    body { font-size: 16px; }
+  body { font-size: 16px; }
+  .side-images img { width: 95%; }
 }
 
 /* Fokus outline za pristupačnost */
@@ -151,8 +151,7 @@ a:focus, .call-btn:focus { outline: 3px solid #ffab91; outline-offset: 4px; }
 
 /* Isključi hover za mobilne uređaje */
 @media (hover: none) {
-    .call-btn:hover, .side-images img:hover, .card:hover { transform: none; box-shadow: inherit; }
+  .call-btn:hover, .side-images img:hover, .card:hover { transform: none; box-shadow: inherit; }
 }
-
 
 
