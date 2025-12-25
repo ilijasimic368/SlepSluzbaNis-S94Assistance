@@ -12,16 +12,18 @@ body {
 header {
     padding: 30px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #1a73e8 0%, #1558b0 100%);
-    color: white;
+    background: #e0f0ff; /* neutralna svetloplava */
+    color: #333;
     border-radius: 0 0 20px 20px;
 }
+
 h1 { font-size: 2em; margin: 0; }
 .rating { color: #ffd700; font-weight: bold; margin: 10px 0; font-size: 1.3em; }
 
+/* ========== Call to Action ========== */
 .call-btn {
     display: inline-block;
-    background: #ff5722;
+    background: #28a745; /* zelena */
     color: white;
     padding: 16px 28px;
     text-decoration: none;
@@ -32,7 +34,7 @@ h1 { font-size: 2em; margin: 0; }
     transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 .call-btn:hover, .call-btn:focus {
-    background: #e64a19;
+    background: #218838; /* tamnija zelena */
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     outline: none;
@@ -74,7 +76,7 @@ h1 { font-size: 2em; margin: 0; }
 .card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
 
 .info { margin-top: 25px; text-align: left; }
-h2 { color: #1a73e8; margin-bottom: 10px; }
+h2 { color: #555; margin-bottom: 10px; } /* mekša boja naslova */
 
 /* Lista usluga sa ikonama */
 ul { padding-left: 0; list-style: none; }
@@ -116,9 +118,7 @@ footer a { color: #1a73e8; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
 /* Responsivnost */
-@media (max-width: 1200px) {
-    .side-images img { height: 160px; }
-}
+@media (max-width: 1200px) { .side-images img { height: 160px; } }
 @media (max-width: 768px) {
     .side-images img { height: 140px; }
     .card { padding: 25px; }
@@ -136,4 +136,5 @@ a:focus, .call-btn:focus { outline: 3px solid #ffab91; outline-offset: 4px; }
 @media (hover: none) {
     .call-btn:hover, .side-images img:hover, .card:hover { transform: none; box-shadow: inherit; }
 }
+
 
