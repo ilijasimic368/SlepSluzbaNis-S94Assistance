@@ -1,0 +1,134 @@
+/* Osnovni stilovi tela sajta */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #222;
+}
+
+.rating {
+    color: #f4b400;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.call-btn {
+    display: inline-block;
+    background: #1a73e8;
+    color: white;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: 15px 0;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.call-btn:hover {
+    background: #1558b0;
+    transform: scale(1.05);
+}
+
+/* Glavni kontejner sa slikama sa strane */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Kartica u sredini */
+.card {
+    max-width: 800px; /* povećana kartica */
+    width: 60%;
+    background: #fff;
+    padding: 40px; /* veći padding */
+    border-radius: 16px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15); /* jača senka */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* Sekcije unutar kartice */
+.info {
+    margin-top: 20px;
+}
+
+
+/* Side slike */
+.side-image {
+    width: 460px; /* povećano sa 120px na 180px */
+    border-radius: 24px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    height: 350px;
+}
+
+.side-image:hover {
+    transform: scale(1.05); /* lagano povećanje pri hoveru */
+}
+
+/* Leva i desna slika */
+.side-image.left {
+    order: 0;
+}
+
+.side-image.right {
+    order: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Responsivnost za mobilne uređaje */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-image {
+        width: 60%;
+        margin: 15px 0;
+    }
+
+    .card {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+/* Lista usluga */
+ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+#slika4 
+{
+    width: 460px;
+    height: 350px;
+}
+
+
